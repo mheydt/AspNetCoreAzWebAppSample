@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Diagnostics.Tracing;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using deploy_from_github.Models;
@@ -12,6 +13,7 @@ namespace deploy_from_github.Controllers
     {
         public IActionResult Index()
         {
+            Trace.WriteLine("HomeController.Index");
             return View();
         }
 
